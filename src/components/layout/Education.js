@@ -58,7 +58,37 @@ export default function Education() {
                         </ReactCardFlip>
                     </div>
 
-                    
+                    <div className="flex justify-center items-center">
+                        <ReactCardFlip
+                            flipDirection="vertical"
+                            isFlipped={isFlipped2}
+                        >
+                            <div
+                                className="card bg-gray-600 hover:border-hover-border-color border-4 
+                                            border-gray-600 rounded-[25px] flex items-center justify-between p-5"
+                                onClick={flipCard2}
+                            >
+                                <h1 className="text-2xl text-white">
+                                    Degrees Earned
+                                </h1>
+                                <Plus />
+                            </div>
+
+                            <div
+                                className="card bg-white text-black rounded-[25px] flex items-center justify-between p-5"
+                                onClick={flipCard2}
+                            >
+                                <div className="text-left mx-auto max-w-md">
+                                    <h3 className="text-base">2023 - Present</h3>
+                                    <h2 className="text-xl">BSc (hons) Computer Security</h2>
+                                    <h3 className="text-lg">University of Plymouth - United Kingdom</h3>
+                                </div>
+                                <div>
+                                    <Close />
+                                </div>
+                            </div>
+                        </ReactCardFlip>
+                    </div>
                 </div>
 
             </section>
