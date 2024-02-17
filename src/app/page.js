@@ -1,4 +1,5 @@
 import About from "@/components/layout/About";
+import Faq from "@/components/layout/Faq";
 import Hero, { SectionHeaders } from "@/components/layout/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <Faq />
     </>
   );
 }
