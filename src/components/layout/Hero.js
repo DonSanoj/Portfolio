@@ -24,7 +24,7 @@ export function SectionHeaders({ subHeader, mainHeader }) {
 
 export function DownloadButton() {
     // Add logic here to generate or fetch the CV file URL
-    const cvFileUrl = '/sanoj.pdf';
+    const cvFileUrl = './sanoj.pdf';
 
     return (
         <a href={cvFileUrl} download="sanoj-cv.pdf">
