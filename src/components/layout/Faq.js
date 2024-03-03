@@ -25,10 +25,10 @@ export const projects = [
     },
 ]
 
-export default function Faq() {
+export default function FAQ() {
     return (
         <>
-            <section id="faq" className=" mt-4 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
+            <section id="faq" className=" mt-2 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
                 <SectionHeaders
                     subHeader={'Find Answers to Common Queries'}
                     mainHeader={'Frequently asked questions'} />
@@ -38,7 +38,7 @@ export default function Faq() {
                 })} */}
             </section>
         </>
-    )
+    );
 }
 
 // export const Card = ({ title, description, src, link, color, i }) => {
