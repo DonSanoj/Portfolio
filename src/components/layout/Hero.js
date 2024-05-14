@@ -24,10 +24,10 @@ export function SectionHeaders({ subHeader, mainHeader }) {
 }
 
 export function DownloadButton() {
-    const cvFileUrl = '/sanoj.pdf';
+    const cvFileUrl = '/Sanoj.pdf';
 
     return (
-        <a href={cvFileUrl} download="sanoj-cv.pdf">
+        <a href={cvFileUrl} download="Sanoj-cv.pdf">
             Download CV
         </a>
     );
@@ -40,7 +40,7 @@ export default function Hero() {
     return (
 
         <>
-            <section id="hero" className="hero mt-4 max-w-6xl mx-auto p-4 border-gray-600 mb-16 scroll-smooth">
+            <section id="hero" className="hero mt-4 max-w-6xl mx-auto p-4 border-gray-600 mb-0 sm:mb-8 scroll-smooth">
 
                 <div className=" my-40 ml-8 sm:ml-0">
 
