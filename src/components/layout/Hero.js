@@ -35,6 +35,8 @@ export function DownloadButton() {
 
 export default function Hero() {
 
+    const hello = "Hello, I'm";
+
     return (
 
         <>
@@ -44,7 +46,7 @@ export default function Hero() {
 
                     <div>
                         <h1 className=" text-3xl sm:text-[20px] text-gray-500">
-                            Hello, I'm
+                            {hello}
                         </h1>
 
                         <h1 className=" text-white text-6xl -mx-1 mt-4 sm:mt-0">
