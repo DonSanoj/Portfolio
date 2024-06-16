@@ -35,7 +35,7 @@ export default function Header() {
         <header className=" bg-black text-white shadow-md fixed z-[100] w-full 
                             container mx-auto p-4 px-8 flex items-center justify-between border-b border-gray-600">
 
-            <Link className=" hidden md:flex text-2xl cursor-pointer" href={'/'}>Sanoj.Dev</Link>
+            {/* <Link className=" hidden md:flex text-2xl cursor-pointer" href={'/'}>Sanoj.Dev</Link> */}
 
             <Link className=" md:hidden flex text-2xl cursor-pointer" href={'/'}>S.Dev</Link>
 
