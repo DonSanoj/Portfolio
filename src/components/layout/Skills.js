@@ -308,7 +308,7 @@ export function Other() {
 export default function Skills() {
     return (
         <>
-            <section id="skills" className=" mt-0 sm:mt-2 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
+            <section id="skills" className=" mt-0 sm:mt-4 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
                 <SectionHeaders
                     subHeader={'Explore the tools and technologies that shape my professional toolkit'}
                     mainHeader={'Expertise & Skills'} />

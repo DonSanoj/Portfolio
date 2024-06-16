@@ -35,12 +35,12 @@ export default function Header() {
         <header className=" bg-black text-white shadow-md fixed z-[100] w-full 
                             container mx-auto p-4 px-8 flex items-center justify-between border-b border-gray-600">
 
-            <Link className=" hidden md:flex text-2xl cursor-pointer" href={'/'}>Sanoj Aminda</Link>
+            <Link className=" hidden md:flex text-2xl cursor-pointer" href={'/'}>Sanoj.Dev</Link>
 
-            <Link className=" md:hidden flex text-2xl cursor-pointer" href={'/'}>S Aminda</Link>
+            <Link className=" md:hidden flex text-2xl cursor-pointer" href={'/'}>S.Dev</Link>
 
             <nav className=" hidden md:flex items-center gap-10 cursor-pointer">
-                <Link href={'/'} className="hover:text-blue-500 transition duration-200">Home</Link>
+                <Link href={'/#hero'} className="hover:text-blue-500 transition duration-200">Home</Link>
                 <Link href={'/#skills'} className="hover:text-blue-500 transition duration-200">Skills</Link>
                 <Link href={'/#about'} className="hover:text-blue-500 transition duration-200">About</Link>
                 <Link href={'/#contact'} className="hover:text-blue-500 transition duration-200">Contact</Link>
