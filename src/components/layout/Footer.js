@@ -9,9 +9,9 @@ import Link from "next/link";
 
 export default function Footer() {
     return (
-        <footer className=" border-t border-gray-600 p-[22px] sm:p-8 text-center text-gray-400 mt-16 flex flex-col sm:flex-row items-center justify-between bg-black">
+        <footer className=" z-50 p-[22px] sm:p-8 text-center text-gray-400 mt-16 flex flex-col sm:flex-row items-center justify-between bg-black">
 
-            <div className=" text-xl flex gap-4 mb-4 sm:mb-0">
+            <div className=" text-2xl flex gap-4 mb-4 sm:mb-0">
                 <Link className=" hover:text-white" href={'https://twitter.com/Sanoj1128'}><FaXTwitter /></Link>
                 <Link className=" hover:text-white" href={'https://github.com/DonSanoj'}><FaGithub /></Link>
                 <Link className=" hover:text-white" href={'https://www.linkedin.com/in/sanoj-aminda/'}><FaLinkedin /></Link>

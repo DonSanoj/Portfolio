@@ -3,8 +3,8 @@
 // Programming languages
 import { DiJsBadge } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import { SiPhp } from "react-icons/si";
 import { FaPython } from "react-icons/fa";
+import { SiDart } from "react-icons/si";
 
 // Frontend Development
 import { FaReact } from "react-icons/fa";
@@ -16,316 +16,276 @@ import { SiTailwindcss } from "react-icons/si";
 import { DiSass } from "react-icons/di";
 
 // Backend Development
+import { SiPhp } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
 
 // Mobile App Development
 import { RiFlutterFill } from "react-icons/ri";
-import { SiDart } from "react-icons/si";
 
 // Database
 import { SiMongodb } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 // Other
 import { DiLinux } from "react-icons/di";
+import { SiKalilinux } from "react-icons/si";
 import { DiGit } from "react-icons/di";
 
-import {
-    Table,
-    TableHeader,
-    TableColumn,
-    TableBody,
-    TableRow,
-    TableCell,
-} from "@nextui-org/react";
 import { SectionHeaders } from "./Hero";
-import { useState } from "react";
-import About from "./About";
+import { BentoGrid, BentoGridItem } from "../ui/bento-grid";
 
-export function ProgrammingLanguages() {
-
-    const [languageTitle, setLanguageTitle] = useState('Programming Languages');
-
-    const handleCellMouseEnter = (title) => {
-        setLanguageTitle(title);
-    };
-
-    const handleCellMouseLeave = () => {
-        setLanguageTitle('Programming Languages');
-    };
-
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 text-center text-2xl font-medium 
-                                        text-gray-200 tracking-wider border-[1px] border-gray-600">
-                        {languageTitle}
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('JavaScript')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <DiJsBadge className="mx-auto text-[#F0DB4F]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('TypeScript')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <SiTypescript className="mx-auto text-[#007acc]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 w-1/3 whitespace-nowrap border-[1px] border-gray-600 text-center text-7xl"
-                            onMouseEnter={() => handleCellMouseEnter('Php')}
-                            onMouseLeave={handleCellMouseLeave}>
-                            <SiPhp className="mx-auto text-[#777BB3]" />
-                        </TableCell>
-                        <TableCell className="px-6 py-16 w-1/3 whitespace-nowrap border-[1px] border-gray-600 text-center text-6xl"
-                            onMouseEnter={() => handleCellMouseEnter('Python')}
-                            onMouseLeave={handleCellMouseLeave}>
-                            <FaPython className="mx-auto text-[#4584b6]" />
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-[1px] w-1/3 border-gray-600 mx-auto text-center text-3xl">
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
-
-export function FrontendDevelopment() {
-
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 text-center text-2xl font-medium 
-                                        text-gray-200 tracking-wider border-[1px] border-gray-600">
-                        Frontend <br /> Development
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600">
-                        <FaReact className="mx-auto text-[#61DBFB]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600">
-                        <SiNextdotjs className="mx-auto text-[#ffffff]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600">
-                        <DiHtml5 className="mx-auto text-[#f06529]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-[1px] border-gray-600 text-center text-7xl">
-                            <DiCss3 className="mx-auto text-[#2965f1]" />
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-[1px] border-gray-600 text-center text-6xl">
-                            <DiSass className="mx-auto text-[#a246b4]" />
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-[1px] border-gray-600 text-center text-6xl">
-                            <SiTailwindcss className="mx-auto text-[#3490dc]" />
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-[1px] border-gray-600 text-center text-6xl">
-                            <DiBootstrap className="mx-auto text-[#563D7C]" />
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
-
-export function BackendDevelopment() {
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 text-center text-2xl font-medium 
-                                        text-gray-200 tracking-wider border-[1px] border-gray-600">
-                        Backend <br /> Development
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium 
-                                        tracking-wider border-[1px] border-gray-600">
-                        <FaNodeJs className="mx-auto text-[#3c873a]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-gray-600 text-center text-7xl hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap border-gray-600 text-center text-6xl hidden">
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
-
-export function AppDevelopment() {
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 text-center text-2xl font-medium border-[1px]
-                                        text-gray-200 tracking-wider border-gray-600">
-                        Mobile App <br /> Development
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium border-[1px]
-                                        tracking-wider border-gray-600">
-                        <RiFlutterFill className="mx-auto text-[#1fbcfd]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 text-center text-6xl font-medium border-[1px]
-                                        tracking-wider border-gray-600">
-                        <SiDart className="mx-auto text-[#0075BA]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-7xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-6xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-6xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
-
-export function Database() {
-
-    const [languageTitle, setLanguageTitle] = useState('Database');
-
-    const handleCellMouseEnter = (title) => {
-        setLanguageTitle(title);
-    };
-
-    const handleCellMouseLeave = () => {
-        setLanguageTitle('Database');
-    };
-
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-2xl font-medium border-[1px]
-                                        text-gray-200 tracking-wider border-gray-600">
-                        {languageTitle}
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-7xl font-medium border-[1px]
-                                        tracking-wider border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('MongoDB')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <SiMongodb className="mx-auto text-[#00ED64]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-7xl font-medium border-[1px]
-                                        tracking-wider border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('MySQL')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <SiMysql className="mx-auto text-[#00758F]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-8xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-6xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap text-center 
-                                            text-6xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
-
-export function Other() {
-
-    const [languageTitle, setLanguageTitle] = useState('Other');
-
-    const handleCellMouseEnter = (title) => {
-        setLanguageTitle(title);
-    };
-
-    const handleCellMouseLeave = () => {
-        setLanguageTitle('Other');
-    };
-
-    return (
-        <div className="overflow-x-auto">
-            <Table className="w-full" aria-label="Example static collection table">
-                <TableHeader className="bg-gray-100">
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-2xl font-medium border-[1px]
-                                        text-gray-200 tracking-wider border-gray-600">
-                        {languageTitle}
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-7xl font-medium border-[1px]
-                                        tracking-wider border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('Linux')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <DiLinux className="mx-auto text-[#FFCC33]" />
-                    </TableColumn>
-                    <TableColumn className="px-6 py-16 w-1/3 text-center text-7xl font-medium border-[1px]
-                                        tracking-wider border-gray-600"
-                        onMouseEnter={() => handleCellMouseEnter('Git')}
-                        onMouseLeave={handleCellMouseLeave}>
-                        <DiGit className="mx-auto text-[#F1502F]" />
-                    </TableColumn>
-                </TableHeader>
-                <TableBody>
-                    <TableRow key="1">
-                        <TableCell className="px-6 py-16 whitespace-nowrap 
-                                            text-center text-8xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap 
-                                            text-center text-7xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                        <TableCell className="px-6 py-16 whitespace-nowrap 
-                                            text-center text-7xl border-[1px] border-gray-600 hidden">
-                        </TableCell>
-                    </TableRow>
-                </TableBody>
-            </Table>
-        </div>
-    );
-}
+import { cn } from "@/utils/cn";
+import React from "react";
+import Link from "next/link";
 
 export default function Skills() {
     return (
         <>
-            <section id="skills" className=" mt-0 sm:mt-4 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
+            <section id="skills" className=" mt-0 sm:mt-4 max-w-6xl mx-auto p-4 text-center mb-8 scroll-smooth">
+
                 <SectionHeaders
                     subHeader={'Explore the tools and technologies that shape my professional toolkit'}
                     mainHeader={'Expertise & Skills'} />
 
                 <div className=" mt-12 overflow-x-auto">
-                    <ProgrammingLanguages />
-                    <FrontendDevelopment />
-                    <BackendDevelopment />
-                    <AppDevelopment />
-                    <Database />
-                    <Other />
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {programmingLang.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
+                </div>
+
+                <div className=" mt-12 overflow-x-auto">
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {frontendDev.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
+                </div>
+
+                <div className=" mt-12 overflow-x-auto">
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {backendDev.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
+                </div>
+
+                <div className=" mt-12 overflow-x-auto">
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {appDev.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
+                </div>
+
+                <div className=" mt-12 overflow-x-auto">
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {database.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
+                </div>
+
+                <div className=" mt-12 overflow-x-auto" id="down">
+                    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+                        {other.map((item, i) => (
+                            <BentoGridItem
+                                key={i}
+                                title={item.title}
+                                description={item.description}
+                                header={item.header}
+                                className={item.className}
+                                icon={item.icon}
+                            />
+                        ))}
+                    </BentoGrid>
                 </div>
 
             </section>
-
-            <About />
-
         </>
     );
 }
+
+const programmingLang = [
+    {
+        title: "Programming Languages",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "JavaScript",
+        header: <DiJsBadge className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#F0DB4F]" />,
+        className: "text-xl"
+    },
+    {
+        title: "TypeScript",
+        header: <SiTypescript className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#007acc]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Python",
+        header: <FaPython className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#4584b6]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Dart",
+        header: <SiDart className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#0075BA]" />,
+        className: "text-xl"
+    },
+    {},
+];
+
+const frontendDev = [
+    {
+        title: "Frontend Development",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "React",
+        header: <FaReact className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#61DBFB]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Next.js",
+        header: <SiNextdotjs className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#ffffff]" />,
+        className: "text-xl"
+    },
+    {
+        title: "HTML",
+        header: <DiHtml5 className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#f06529]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Css",
+        header: <DiCss3 className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#2965f1]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Sass",
+        header: <DiSass className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#a246b4]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Tailwind Css",
+        header: <SiTailwindcss className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#3490dc]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Bootstrap",
+        header: <DiBootstrap className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#563D7C]" />,
+        className: "text-xl"
+    },
+    {},
+];
+
+const backendDev = [
+    {
+        title: "Backend Development",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "Php",
+        header: <SiPhp className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#474A8A]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Node.js",
+        header: <FaNodeJs className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#3c873a]" />,
+        className: "text-xl"
+    },
+];
+
+const appDev = [
+    {
+        title: "Application Development",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "Flutter",
+        header: <RiFlutterFill className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#1fbcfd]" />,
+        className: "text-xl"
+    },
+    {},
+];
+
+const database = [
+    {
+        title: "Database",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "MySQL",
+        header: <SiMysql className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#00758F]" />,
+        className: "text-xl"
+    },
+    {
+        title: "PostgreSQL",
+        header: <BiLogoPostgresql className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#456a90]" />,
+        className: "text-xl"
+    },
+    {
+        title: "MongoDB",
+        header: <SiMongodb className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#00ED64]" />,
+        className: "text-xl"
+    },
+    {},
+];
+
+const other = [
+    {
+        title: "Others",
+        className: "md:col-span-1 justify-center items-center text-3xl",
+    },
+    {
+        title: "Git",
+        header: <DiGit className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#F1502F]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Linux",
+        header: <DiLinux className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#FFCC33]" />,
+        className: "text-xl"
+    },
+    {
+        title: "Kali Linux",
+        header: <SiKalilinux className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl text-[#ffffff]" />,
+        className: "text-xl"
+    },
+    {},
+];

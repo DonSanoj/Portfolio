@@ -7,7 +7,7 @@ export default function Contact() {
     return (
         <>
 
-            <section id="contact" className=" mt-4 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth">
+            <section id="contact" className=" mt-0 max-w-6xl mx-auto p-4 text-center mb-16 scroll-smooth z-10">
 
                 <SectionHeaders
                     subHeader={'Reach Out for Collaboration and Inquiries'}
