@@ -31,7 +31,7 @@ export function BackgroundGradient({
                     }`}
             />
 
-            <div className={`relative z-10 ${className}`}>{children}</div>
+            <div className={`relative z-10 ${className}`}>{children}</div> 
         </div>
     );
 }
