@@ -38,7 +38,7 @@ export default function About() {
                     </p>
                 </div>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
+                {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
                     <div className="flex justify-center items-center w-full sm:w-auto">
                         <ReactCardFlip flipDirection="vertical" isFlipped={isFlipped1}>
                             <div
@@ -94,7 +94,7 @@ export default function About() {
                             </div>
                         </ReactCardFlip>
                     </div>
-                </div>
+                </div> */}
 
 
             </section>

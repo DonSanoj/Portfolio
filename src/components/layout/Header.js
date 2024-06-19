@@ -37,7 +37,7 @@ export default function Header() {
                             container mx-auto p-2 px-8 flex items-center justify-between">
 
             <Link className=" md:flex text-2xl cursor-pointer" href={'/'}>
-                <Image src={'/SanojAminda.png'} width={55} height={55} />
+                <Image src={'/SanojAminda.png'} width={55} height={55} className=" rounded-xl" />
             </Link>
 
 
