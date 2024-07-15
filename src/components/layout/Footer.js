@@ -8,6 +8,9 @@ import { LuSun } from "react-icons/lu";
 import Link from "next/link";
 
 export default function Footer() {
+
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer className=" z-50 p-[22px] sm:p-8 text-center text-gray-400 mt-8 flex flex-col sm:flex-row items-center justify-between bg-black">
 
@@ -18,7 +21,7 @@ export default function Footer() {
             </div>
 
             <div className="mb-4 sm:mb-0 sm:ml-12 ml-0">
-                &copy; 2024 All rights reserved
+                &copy; {currentYear} All rights reserved
             </div>
 
             <div className=" sm:flex gap-4 cursor-pointer ">

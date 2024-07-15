@@ -102,7 +102,7 @@ export default function Contact() {
                                     name="message"
                                     required
                                     placeholder="Type Message..."
-                                    className=" h-12 max-h-16 overflow-x-hidden mb-3 text-white dark:bg-zinc-800 rounded-xl border-none p-2 w-full"
+                                    className=" h-12 max-h-16 min-h-12 overflow-x-hidden mb-3 text-white dark:bg-zinc-800 rounded-xl border-none p-2 w-full"
                                 >
                                 </textarea>
 
