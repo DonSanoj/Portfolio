@@ -11,7 +11,7 @@ const LikeButton = () => {
     useEffect(() => {
         const fetchLikes = async () => {
             try {
-                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}api/like`);
+                const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/api/like`);
                 setLikeCount(response.data.count || 0);
                 setLoading(false);
             } catch (error) {
@@ -23,7 +23,7 @@ const LikeButton = () => {
 
     const handleLike = async () => {
         try {
-            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}api/like`);
+            const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/like`);
             setLikeCount(response.data.count || likeCount + 1);
         } catch (error) {
             console.error('Error liking portfolio:', error);
