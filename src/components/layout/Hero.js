@@ -9,6 +9,7 @@ import React, { useState } from 'react';
 
 import { FiDownload } from "react-icons/fi";
 import { FaArrowCircleRight } from "react-icons/fa";
+import LikeButton from "./LikeButton";
 
 export function SectionHeaders({ subHeader, mainHeader }) {
     return (
@@ -38,6 +39,8 @@ export default function Hero() {
 
         <>
             <div className="flex flex-row items-center justify-center px-20 mt-[80px] z-[20] ">
+
+                <LikeButton />
 
                 <div className="flex flex-col justify-center text-center">
 
