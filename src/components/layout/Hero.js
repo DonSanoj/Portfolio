@@ -9,7 +9,6 @@ import React, { useState } from 'react';
 
 import { FiDownload } from "react-icons/fi";
 import { FaArrowCircleRight } from "react-icons/fa";
-import LikeButton from "./LikeButton";
 
 export function SectionHeaders({ subHeader, mainHeader }) {
     return (
@@ -38,9 +37,7 @@ export default function Hero() {
     return (
 
         <>
-            <div className="flex flex-row items-center justify-center px-20 mt-[80px] z-[20] ">
-
-                <LikeButton />
+            <div className="flex flex-col items-center justify-center px-20 mt-[80px] z-[20] ">
 
                 <div className="flex flex-col justify-center text-center">
 
@@ -62,7 +59,7 @@ export default function Hero() {
                     </div>
 
                     <div className="text-md mt-3 flex justify-center">
-                        <button className=" z-[1] bg-primary text-white px-4 py-2 rounded-full gap-2 flex uppercase bg-gray-600 backdrop-blur-lg hover:bg-gradient-to-r from-purple-500 to-orange-400">
+                        <button className=" z-[1] bg-primary text-white px-4 py-2 rounded-full gap-2 flex uppercase bg-gray-700 backdrop-blur-lg hover:bg-gradient-to-r from-purple-500 to-orange-400">
                             <DownloadButton /> <FiDownload className=" size-5" />
                         </button>
                     </div>
