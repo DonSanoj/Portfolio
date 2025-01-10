@@ -41,9 +41,9 @@ export default function Header() {
                 <Image src={'/SanojAminda.png'} width={55} height={55} className=" rounded-xl" />
             </Link>
 
-
+            {/* Desktop View */}
             <nav className=" hidden md:flex gap-8 text-gray-500 font-semibold items-center">
-                
+
                 <LikeButton />
 
                 <Link
@@ -52,7 +52,11 @@ export default function Header() {
                 </Link>
             </nav>
 
+            {/* Mobile View */}
             <nav className=" flex md:hidden gap-8 text-gray-500 font-semibold items-center">
+
+                <LikeButton />
+
                 <Link
                     className=" hover:text-black bg-gradient-to-r from-purple-500 to-orange-400 text-white rounded-full px-4 py-4"
                     href={'https://github.com/DonSanoj'}><FaGithub />
