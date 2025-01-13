@@ -4,6 +4,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { ChakraProvider } from "@chakra-ui/react";
 import StarsCanvas from "@/components/StarsBackground";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +22,7 @@ export default function RootLayout({ children }) {
           <ChakraProvider>
             <StarsCanvas />
             <Header />
+            <ToastContainer theme="dark" position="top-center" autoClose={3000} />
             {children}
             <Footer />
           </ChakraProvider>
