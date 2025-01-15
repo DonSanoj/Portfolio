@@ -29,7 +29,7 @@ const LikeButton = () => {
     const handleLike = async () => {
         try {
             setClicked(true);
-            setIsRed(true); // Make the heart red after the first click
+            setIsRed(true);
             setTimeout(() => setClicked(false), 400);
 
             const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/like`);

@@ -77,12 +77,13 @@ export default function FloatingNavigationBox() {
                     style={{ top: position.top, left: position.left }}
                     onMouseDown={handleMouseDown}
                 >
-                    <button
+                    <a
                         className="bg-[#2b2b2d] rounded-md p-3 text-center text-xl font-semibold flex items-center justify-center transition duration-200 hover:bg-gradient-to-r from-purple-500 to-orange-400"
-                        onClick={() => handleNavClick("home")}
+                        // onClick={() => handleNavClick("home")}
+                        href="/"
                     >
                         <FaHouse />
-                    </button>
+                    </a>
                     <button
                         className="bg-[#2b2b2d] rounded-md p-3 text-center text-xl font-semibold flex items-center justify-center transition duration-200 hover:bg-gradient-to-r from-purple-500 to-orange-400"
                         onClick={() => handleNavClick("addFeedback")}

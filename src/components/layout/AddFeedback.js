@@ -44,7 +44,6 @@ const AddFeedback = ({ setActiveComponent }) => {
         try {
             // Send feedback data to the backend
             const response = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/api/feedback`, {
-            // const response = await axios.post("http://localhost:5001/api/feedback", {
                 feedbackerStatus,
                 name,
                 email,
